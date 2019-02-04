@@ -57,7 +57,9 @@ function doPost(e) {
         };
         break;
       case "キャンセル連絡" :
-        var data =returnMessage(token, "キャンセルに関しての問い合わせはこの人に連絡してね。\n\n■まりな\nYYYY\n\nまた、サークルスクエアも不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html");
+        // var data = returnMessage(token, "現在参加できるイベントはありません。")
+        // さくよさ時期に復活
+        var data =returnMessage(token, "キャンセルに関しての問い合わせはこの人に連絡してね。\n\n■祭り担当：きゃべ\nhttps://line.me/ti/p/WXuIvR2nS0\n■インスト担当：たらこ\nhttps://line.me/ti/p/umUggC9ucM\n\nまた、サークルスクエアも不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html");
         break;
       case "サークルスクエア":
         var data = returnMessage(token, "イベント参加はサークルスクエアより参加表明をお願いします。\n\nhttps://www.c-sqr.net/cs75424/News.html");
