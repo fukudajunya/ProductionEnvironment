@@ -28,6 +28,13 @@ ret_msg_inst = {
     "type" : "carousel",
     "columns": [
       {
+        "title": "担当者に質問がしたい",
+        "text": "教えて担当さん",
+        "actions": [{"type": "message",
+                     "label": "担当はだれ？",
+                     "text": "教えて担当さん"}]
+      },
+      {
         "title": "イベントに参加したい",
         "text": "イベント参加申請",
         "actions": [{"type": "message",
@@ -417,7 +424,7 @@ quick_rep_receive = [{
 // QuickReplyでメニューの実装
 quick_rep = [{
   "type": "text",
-  "text": "知りたい情報を下のメニューから探してね。",
+  "text": "知りたい情報を下のメニューからスクロールして探してね。\n\n・申請状況確認\n・購入申請の取消\n・支払い確認の取消\n・備品などの料金確認\n・振込先の確認\n・イベントについて確認\n・振り動画",
   "quickReply": {
     "items": [
       {
