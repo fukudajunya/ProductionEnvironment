@@ -46,7 +46,7 @@ function doPost(e) {
       case "申請状況確認" :
         var data = checkApplicationStatus(userId,token);
         break;
-      // 管理者用メンバー申請状況確認
+        // 管理者用メンバー申請状況確認
       case "メンバー申請状況" :
         var data = checkStatusForManager(token);
         break;  
@@ -55,6 +55,8 @@ function doPost(e) {
           "replyToken" : token, 
           "messages" : [ret_msg_inst]
         };
+        break;
+      case "行ってらっしゃい！" :
         break;
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
@@ -72,10 +74,17 @@ function doPost(e) {
         // 振り動画作成完了後復活
         /*
         var data =  {
-          "replyToken" : token, 
-          "messages" : [ret_msg_mv]
+        "replyToken" : token, 
+        "messages" : [ret_msg_mv]
         };
         */
+        break;
+        // 持ち物チェック
+      case "持ち物チェック" :
+        var data =  {
+          "replyToken" : token, 
+          "messages" : [ret_check]
+        };
         break;
       case "購入申請" :
         var data = {

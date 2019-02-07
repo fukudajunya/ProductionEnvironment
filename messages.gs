@@ -1,3 +1,25 @@
+// 持ち物確認用
+ret_check　= {
+  "type":"template",
+  "altText":"this is a check form",
+  "template":{
+    "type":"buttons",
+    "text":"持ち物確認\n\n・鳴子：1組\n・足袋：1足\n・衣装一式(上衣装、下衣装、帯)\n・貴重品入れ",
+    "defaultAction":{
+      "type":"message",
+      "label":"行ってきます！",
+      "text":"行ってらっしゃい！"
+    },
+    "actions":[
+      {
+        "type":"message",
+        "label":"行ってきます！",
+        "text":"行ってらっしゃい！"
+      }
+    ]
+  }
+}
+
 ret_msg =  {
   "type": "template",
   "template": {
@@ -424,7 +446,7 @@ quick_rep_receive = [{
 // QuickReplyでメニューの実装
 quick_rep = [{
   "type": "text",
-  "text": "知りたい情報を下のメニューからスクロールして探してね。\n\n・申請状況確認\n・購入申請の取消\n・支払い確認の取消\n・備品などの料金確認\n・振込先の確認\n・イベントについて確認\n・振り動画",
+  "text": "知りたい情報を下のメニューからスクロールして探してね。\n\n・申請状況確認\n・購入申請の取消\n・支払い確認の取消\n・備品などの料金確認\n・祭りの持ち物確認\n・振込先の確認\n・イベントについて確認\n・振り動画",
   "quickReply": {
     "items": [
       {
@@ -457,6 +479,14 @@ quick_rep = [{
           "type": "message",
           "label": "備品などの料金の確認がしたい！",
           "text" : "料金"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "祭りの持ち物確認",
+          "text" : "持ち物チェック"
         }
       },
       {
