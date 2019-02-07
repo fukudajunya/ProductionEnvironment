@@ -7,14 +7,14 @@ ret_check　= {
     "text":"持ち物確認\n\n・鳴子：1組\n・足袋：1足\n・衣装一式(上衣装、下衣装、帯)\n・貴重品入れ",
     "defaultAction":{
       "type":"message",
-      "label":"行ってきます！",
-      "text":"行ってらっしゃい！"
+      "label":"準備OK",
+      "text":"行ってきます!"
     },
     "actions":[
       {
         "type":"message",
-        "label":"行ってきます！",
-        "text":"行ってらっしゃい！"
+        "label":"準備OK",
+        "text":"行ってきます!"
       }
     ]
   }

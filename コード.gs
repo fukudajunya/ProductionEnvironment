@@ -56,7 +56,8 @@ function doPost(e) {
           "messages" : [ret_msg_inst]
         };
         break;
-      case "行ってらっしゃい！" :
+      case "行ってきます!" :
+        var data = returnMessage(token, "行ってらっしゃい！");
         break;
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
