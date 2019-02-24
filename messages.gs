@@ -108,9 +108,17 @@ ret_msg_mv = {
 // 購入申請をQuickReplyで実装
 quick_rep_purchase = [{
   "type": "text",
-  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・鳴子/片方:￥1,250\n・鳴子/1組:￥2,500\n・衣装:￥20,000",
+  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・さくよさ参加費：￥3,000\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
   "quickReply": {
     "items": [
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "さくよさ参加費",
+          "text" : "さくよさ参加費(a)"
+        }
+      },
       {
         "type": "action",
         "action": {
@@ -125,14 +133,6 @@ quick_rep_purchase = [{
           "type": "message",
           "label": "鳴子/1組",
           "text" : "鳴子/1組(a)"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-          "type": "message",
-          "label": "衣装/XS",
-          "text" : "衣装/XS(a)"
         }
       },
       {
@@ -163,8 +163,8 @@ quick_rep_purchase = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "衣装/XL",
-          "text" : "衣装/XL(a)"
+          "label": "衣装/LL",
+          "text" : "衣装/LL(a)"
         }
       }
     ]
@@ -181,6 +181,14 @@ quick_rep_purchase_cancel = [{
         "type": "action",
         "action": {
           "type": "message",
+          "label": "さくよさ参加費",
+          "text" : "さくよさ参加費(ad)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
           "label": "鳴子/片方",
           "text" : "鳴子/片方(ad)"
         }
@@ -191,14 +199,6 @@ quick_rep_purchase_cancel = [{
           "type": "message",
           "label": "鳴子/1組",
           "text" : "鳴子/1組(ad)"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-          "type": "message",
-          "label": "衣装/XS",
-          "text" : "衣装/XS(ad)"
         }
       },
       {
@@ -229,8 +229,8 @@ quick_rep_purchase_cancel = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "衣装/XL",
-          "text" : "衣装/XL(ad)"
+          "label": "衣装/LL",
+          "text" : "衣装/LL(ad)"
         }
       }
     ]
@@ -247,6 +247,14 @@ quick_rep_payment = [{
         "type": "action",
         "action": {
           "type": "message",
+          "label": "さくよさ参加費",
+          "text" : "さくよさ参加費(p)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
           "label": "鳴子/片方",
           "text" : "鳴子/片方(p)"
         }
@@ -257,14 +265,6 @@ quick_rep_payment = [{
           "type": "message",
           "label": "鳴子/1組",
           "text" : "鳴子/1組(p)"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-          "type": "message",
-          "label": "衣装/XS",
-          "text" : "衣装/XS(p)"
         }
       },
       {
@@ -295,8 +295,8 @@ quick_rep_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "衣装/XL",
-          "text" : "衣装/XL(p)"
+          "label": "衣装/LL",
+          "text" : "衣装/LL(p)"
         }
       },
       {
@@ -321,6 +321,14 @@ quick_rep_cancel_payment = [{
         "type": "action",
         "action": {
           "type": "message",
+          "label": "さくよさ参加費",
+          "text" : "さくよさ参加費(pd)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
           "label": "鳴子/片方",
           "text" : "鳴子/片方(pd)"
         }
@@ -331,14 +339,6 @@ quick_rep_cancel_payment = [{
           "type": "message",
           "label": "鳴子/1組",
           "text" : "鳴子/1組(pd)"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-          "type": "message",
-          "label": "衣装/XS",
-          "text" : "衣装/XS(pd)"
         }
       },
       {
@@ -369,8 +369,8 @@ quick_rep_cancel_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "衣装/XL",
-          "text" : "衣装/XL(pd)"
+          "label": "衣装/LL",
+          "text" : "衣装/LL(pd)"
         }
       }
     ]
@@ -387,6 +387,14 @@ quick_rep_receive = [{
         "type": "action",
         "action": {
           "type": "message",
+          "label": "さくよさ参加費",
+          "text" : "さくよさ参加費(r)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
           "label": "鳴子/片方",
           "text" : "鳴子/片方(r)"
         }
@@ -397,14 +405,6 @@ quick_rep_receive = [{
           "type": "message",
           "label": "鳴子/1組",
           "text" : "鳴子/1組(r)"
-        }
-      },
-      {
-        "type": "action",
-        "action": {
-          "type": "message",
-          "label": "衣装/XS",
-          "text" : "衣装/XS(r)"
         }
       },
       {
@@ -435,8 +435,8 @@ quick_rep_receive = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "衣装/XL",
-          "text" : "衣装/XL(r)"
+          "label": "衣装/LL",
+          "text" : "衣装/LL(r)"
         }
       }
     ]
