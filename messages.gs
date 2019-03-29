@@ -1,23 +1,24 @@
-// 持ち物確認用
-ret_check　= {
-  "type":"template",
-  "altText":"this is a check form",
-  "template":{
-    "type":"buttons",
-    "text":"持ち物確認\n\n・鳴子：1組\n・足袋：1足\n・衣装一式(上衣装、下衣装、帯)\n・貴重品入れ",
-    "defaultAction":{
-      "type":"message",
-      "label":"準備OK",
-      "text":"行ってきます!"
-    },
-    "actions":[
+//持ち物確認用Carousel
+ret_check = {
+  "type": "template",
+  "template": {
+    "type" : "carousel",
+    "columns": [
       {
-        "type":"message",
-        "label":"準備OK",
-        "text":"行ってきます!"
+        "text": "[衣装]\n・法被\n・グレーのインナー\n・グレーズボン\n・帯\n・垂らす布",
+        "actions": [{"type": "message",
+                     "label": "準備OK",
+                     "text": "行ってきます!"}]
+      },
+      {
+        "text": "[各自準備]\n・黒足袋\n・鳴子(or提灯or纏)\n・貴重品袋\n・黒レギンス\n・黒タンクトップ\n・安全ピン5~6本\n・着替え",
+        "actions": [{"type": "message",
+                     "label": "準備OK",
+                     "text": "行ってきます!"}]
       }
     ]
-  }
+  },
+  "altText": "持ち物チェック"
 }
 
 ret_msg =  {
@@ -75,31 +76,32 @@ ret_msg_inst = {
   "altText": "イベントに関する連絡"
 }
 
+// ToDo 動画が編集されたらURL差し替えで対応
 ret_msg_mv = {
   "type": "template",
   "template": {
     "type" : "carousel",
     "columns": [{
-      "title": "解説動画1",
-      "text": "①から②まで",
+      "title": "こねこね説明動画",
+      "text": "3:55~Last",
       "actions": [{"type": "uri",
-                   "label": "振り動画1(0:00 - 0:30)",
-                   "uri": "https://www.youtube.com/watch?v=ABtP-9WyRxQ&feature=youtu.be"},
-                  {"type": "uri",
-                   "label": "振り動画2(0:30 - 1:00)",
-                   "uri": "https://www.youtube.com/watch?v=XOSLKT8JXmY&feature=youtu.be"},
+                   "label": "こねこね説明動画",
+                   "uri": "https://youtu.be/e5LHOA-AGL4"},
+//                  {"type": "uri",
+//                   "label": "振り動画2(0:30 - 1:00)",
+//                   "uri": "https://www.youtube.com/watch?v=XOSLKT8JXmY&feature=youtu.be"},
                  ]
-                  },
-                  {
-                  "title": "解説動画2",
-                  "text": "③から④まで",
-                  "actions": [{"type": "uri",
-                  "label": "振り動画3(1:00 - 1:30)",
-                  "uri": "https://www.youtube.com/watch?v=yVqfh0IrrRQ&feature=youtu.be"},
-                  {"type": "uri",
-                  "label": "振り動画4(1:30 - 2:00)",
-                  "uri": "https://www.youtube.com/watch?v=s11F2xVm_94&feature=youtu.be"},
-                 ]
+//                  },
+//                  {
+//                  "title": "解説動画2",
+//                  "text": "③から④まで",
+//                  "actions": [{"type": "uri",
+//                  "label": "振り動画3(1:00 - 1:30)",
+//                  "uri": "https://www.youtube.com/watch?v=yVqfh0IrrRQ&feature=youtu.be"},
+//                  {"type": "uri",
+//                  "label": "振り動画4(1:30 - 2:00)",
+//                  "uri": "https://www.youtube.com/watch?v=s11F2xVm_94&feature=youtu.be"},
+//                 ]
     }]
   },
   "altText": "振り動画"

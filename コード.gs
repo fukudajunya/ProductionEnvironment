@@ -41,7 +41,7 @@ function doPost(e) {
         };
         break;
       case "料金" :
-        var data = returnMessage(token, "・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
+        var data = returnMessage(token, "・さくよさ参加費：￥3,000\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
         break;
       case "申請状況確認" :
         var data = checkApplicationStatus(userId,token);
@@ -73,12 +73,12 @@ function doPost(e) {
       case "振り動画" :
         var data = returnMessage(token, "振り動画は制作中です！しばらく待ってね。");
         // 振り動画作成完了後復活
-        /*
-        var data =  {
-        "replyToken" : token, 
-        "messages" : [ret_msg_mv]
-        };
-        */
+//        /*
+//        var data =  {
+//        "replyToken" : token, 
+//        "messages" : [ret_msg_mv]
+//        };
+//        */
         break;
         // 持ち物チェック
       case "持ち物チェック" :
@@ -116,22 +116,22 @@ function doPost(e) {
         break;  
       case "衣装/S(a)" :
         var item = "衣装/S";
-        var price = 20000;
+        var price = 22000;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break;
       case "衣装/M(a)" :
         var item = "衣装/M";
-        var price = 20000;
+        var price = 22000;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break;
       case "衣装/L(a)" :
         var item = "衣装/L";
-        var price = 20000;
+        var price = 22000;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break;
       case "衣装/LL(a)" :
         var item = "衣装/LL";
-        var price = 20000;
+        var price = 22000;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break;
       case "支払い関連" :
