@@ -62,13 +62,13 @@ function doPost(e) {
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
         // さくよさ時期に復活
-        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\nまた、2/24(日)以降のキャンセルの場合は、下記の2人にも連絡してね。\n\n■祭り担当：きゃべ\nhttps://line.me/ti/p/WXuIvR2nS0\n■インスト担当：たらこ\nhttps://line.me/ti/p/umUggC9ucM");
+        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\nまた、さくよさについてキャンセルの場合は、下記の2人にも連絡してね。\n\n■祭り担当：きゃべ\nhttps://line.me/ti/p/WXuIvR2nS0\n■インスト担当：たらこ\nhttps://line.me/ti/p/umUggC9ucM\n\n能登について、4/12(金)以降のキャンセルの場合は、下記の二人にも連絡してね。\n\n■祭り担当:ふぁに\nhttps://line.me/ti/p/KKB-4EfFfs\n■インスト担当:まりな\nhttps://line.me/ti/p/VQJftJ59rh");
         break;
       case "サークルスクエア":
         var data = returnMessage(token, "イベント参加はサークルスクエアより参加表明をお願いします。\n\nhttps://www.c-sqr.net/cs75424/News.html");
         break;
       case "教えて担当さん":
-        var data = returnMessage(token, "さくよさの担当者は以下の2人です！相談はお二人へ！\n\n■イベント参加などで悩んでる\n祭り担当:きゃべ\nhttps://line.me/ti/p/WXuIvR2nS0\n\n■演舞のことなどで悩んでる\nインスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
+        var data = returnMessage(token, "さくよさの担当者は以下の2人です！相談はお二人へ！\n\n■イベント参加などで悩んでる\n祭り担当:きゃべ\nhttps://line.me/ti/p/WXuIvR2nS0\n\n■演舞のことなどで悩んでる\nインスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM\n\n能登の担当は以下の2人です！相談はお二人へ！\n■祭り担当:ふぁに\nhttps://line.me/ti/p/KKB-4EfFfs\n■インスト担当:まりな\nhttps://line.me/ti/p/VQJftJ59rh");
         break;  
       case "振り動画" :
         var data = returnMessage(token, "振り動画は制作中です！しばらく待ってね。");
