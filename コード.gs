@@ -99,11 +99,11 @@ function doPost(e) {
           "messages" : quick_rep_receive
         };
         break;
-      case "さくよさ参加費(a)" :
-        var item = "さくよさ参加費";
-        var price = 3000;
-        var data = purchaseApplicationInfo(userId,userName,item,price,token);
-        break;  
+//      case "さくよさ参加費(a)" :
+//        var item = "さくよさ参加費";
+//        var price = 3000;
+//        var data = purchaseApplicationInfo(userId,userName,item,price,token);
+//        break;  
       case "鳴子/1組(a)" :
         var item = "鳴子/1組";
         var price = 2500;
@@ -140,10 +140,10 @@ function doPost(e) {
           "messages" : quick_rep_payment
         };
         break;
-      case "さくよさ参加費(p)" :
-        var item = "さくよさ参加費";
-        var data = paymentStatusInfo(userId,userName,item,token);
-        break;  
+//      case "さくよさ参加費(p)" :
+//        var item = "さくよさ参加費";
+//        var data = paymentStatusInfo(userId,userName,item,token);
+//        break;  
       case "鳴子/1組(p)" :
         var item = "鳴子/1組";
         var data = paymentStatusInfo(userId,userName,item,token);
@@ -168,10 +168,10 @@ function doPost(e) {
         var item = "衣装/LL";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;
-      case "さくよさ参加費(r)" :
-        var item = "さくよさ参加費";
-        var data = receivedStatusInfo(userId,userName,item,token);
-        break;  
+//      case "さくよさ参加費(r)" :
+//        var item = "さくよさ参加費";
+//        var data = receivedStatusInfo(userId,userName,item,token);
+//        break;  
       case "鳴子/1組(r)" :
         var item = "鳴子/1組";
         var data = receivedStatusInfo(userId,userName,item,token);
@@ -202,10 +202,10 @@ function doPost(e) {
           "messages" : quick_rep_purchase_cancel
         };
         break;
-      case "さくよさ参加費(ad)" :
-        var item = "さくよさ参加費";
-        var data = cancelPurchaseApplication(userId,userName,item,token);
-        break;  
+//      case "さくよさ参加費(ad)" :
+//        var item = "さくよさ参加費";
+//        var data = cancelPurchaseApplication(userId,userName,item,token);
+//        break;  
       case "鳴子/1組(ad)" :
         var item = "鳴子/1組";
         var data = cancelPurchaseApplication(userId,userName,item,token);
@@ -236,10 +236,10 @@ function doPost(e) {
           "messages" : quick_rep_cancel_payment
         };
         break;
-      case "さくよさ参加費(pd)" :
-        var item = "さくよさ参加費";
-        var data = cancelPaymentStatus(userId,userName,item,token);
-        break;  
+//      case "さくよさ参加費(pd)" :
+//        var item = "さくよさ参加費";
+//        var data = cancelPaymentStatus(userId,userName,item,token);
+//        break;  
       case "鳴子/1組(pd)" :
         var item = "鳴子/1組";
         var data = cancelPaymentStatus(userId,userName,item,token);
