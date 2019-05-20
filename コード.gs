@@ -41,7 +41,7 @@ function doPost(e) {
         };
         break;
       case "料金" :
-        var data = returnMessage(token, "・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
+        var data = returnMessage(token, "・能登よさこい参加費:￥24,000\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
         break;
       case "申請状況確認" :
         var data = checkApplicationStatus(userId,token);
@@ -59,6 +59,9 @@ function doPost(e) {
       case "行ってきます!" :
         var data = returnMessage(token, "行ってらっしゃい！");
         break;
+      case "早く見たいなぁ" :
+        var data = returnMessage(token, "もう少し待ってね！");
+        break;
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
         // さくよさ時期に復活
@@ -71,14 +74,14 @@ function doPost(e) {
         var data = returnMessage(token, "能登の担当は以下の2人です！相談はお二人へ！\n■祭り担当:ふぁに\nhttps://line.me/ti/p/KKB-4EfFfs\n■インスト担当:まりな\nhttps://line.me/ti/p/VQJftJ59rh");
         break;  
       case "振り動画" :
-        var data = returnMessage(token, "振り動画は制作中です！しばらく待ってね。");
+//        var data = returnMessage(token, "振り動画は制作中です！しばらく待ってね。");
         // 振り動画作成完了後復活
-//        /*
-//        var data =  {
-//        "replyToken" : token, 
-//        "messages" : [ret_msg_mv]
-//        };
-//        */
+        
+        var data =  {
+        "replyToken" : token, 
+        "messages" : [ret_msg_mv]
+        };
+        
         break;
         // 持ち物チェック
       case "持ち物チェック" :
@@ -99,11 +102,12 @@ function doPost(e) {
           "messages" : quick_rep_receive
         };
         break;
-//      case "さくよさ参加費(a)" :
-//        var item = "さくよさ参加費";
-//        var price = 3000;
-//        var data = purchaseApplicationInfo(userId,userName,item,price,token);
-//        break;  
+      // さくよさ⇒能登に変更 by NF 5/9
+      case "能登よさこい参加費(a)" :
+        var item = "能登よさこい参加費";
+        var price = 24000;
+        var data = purchaseApplicationInfo(userId,userName,item,price,token);
+        break;  
       case "鳴子/1組(a)" :
         var item = "鳴子/1組";
         var price = 2500;
@@ -140,10 +144,11 @@ function doPost(e) {
           "messages" : quick_rep_payment
         };
         break;
-//      case "さくよさ参加費(p)" :
-//        var item = "さくよさ参加費";
-//        var data = paymentStatusInfo(userId,userName,item,token);
-//        break;  
+　　　// 能登よさのため復活 by NF 5/9
+      case "能登よさこい参加費(p)" :
+        var item = "能登よさこい参加費";
+        var data = paymentStatusInfo(userId,userName,item,token);
+        break;  
       case "鳴子/1組(p)" :
         var item = "鳴子/1組";
         var data = paymentStatusInfo(userId,userName,item,token);
@@ -168,10 +173,11 @@ function doPost(e) {
         var item = "衣装/LL";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;
-//      case "さくよさ参加費(r)" :
-//        var item = "さくよさ参加費";
-//        var data = receivedStatusInfo(userId,userName,item,token);
-//        break;  
+      // 能登よさのため復活 by NF 5/9
+      case "能登よさこい参加費(r)" :
+        var item = "能登よさこい参加費";
+        var data = receivedStatusInfo(userId,userName,item,token);
+        break;  
       case "鳴子/1組(r)" :
         var item = "鳴子/1組";
         var data = receivedStatusInfo(userId,userName,item,token);
@@ -202,10 +208,11 @@ function doPost(e) {
           "messages" : quick_rep_purchase_cancel
         };
         break;
-//      case "さくよさ参加費(ad)" :
-//        var item = "さくよさ参加費";
-//        var data = cancelPurchaseApplication(userId,userName,item,token);
-//        break;  
+        // 能登よさのため復活 by NF 5/9
+      case "能登よさこい参加費(ad)" :
+        var item = "能登よさこい参加費";
+        var data = cancelPurchaseApplication(userId,userName,item,token);
+        break;  
       case "鳴子/1組(ad)" :
         var item = "鳴子/1組";
         var data = cancelPurchaseApplication(userId,userName,item,token);
@@ -236,10 +243,11 @@ function doPost(e) {
           "messages" : quick_rep_cancel_payment
         };
         break;
-//      case "さくよさ参加費(pd)" :
-//        var item = "さくよさ参加費";
-//        var data = cancelPaymentStatus(userId,userName,item,token);
-//        break;  
+      // 能登よさのため復活 by NF 5/9
+      case "能登よさこい参加費(pd)" :
+        var item = "能登よさこい参加費";
+        var data = cancelPaymentStatus(userId,userName,item,token);
+        break;  
       case "鳴子/1組(pd)" :
         var item = "鳴子/1組";
         var data = cancelPaymentStatus(userId,userName,item,token);
