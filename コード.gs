@@ -103,6 +103,9 @@ function doPost(e) {
         };
         break;
       // さくよさ⇒能登に変更 by NF 5/9
+      case "衣装の着方":
+        var data = returnMessage(token, "準備中です！ちょっと待ってね！");
+        break;
       case "能登よさこい参加費(a)" :
         var item = "能登よさこい参加費";
         var price = 24000;

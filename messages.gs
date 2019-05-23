@@ -82,68 +82,88 @@ ret_msg_mv = {
   "template": {
     "type" : "carousel",
     "columns": [{
-      "title": "振り動画①",
-      "text": "振り動画その一",
-      "actions": [{"type": "uri",
-                   "label": "かんしゃらで踊るにあたって",
-                   "uri": "https://youtu.be/8sAWJGsyLHg"},
-                  {"type": "uri",
-                   "label": "曲通し",
-                   "uri": "https://youtu.be/HXVOWUdn3_M"},
-                  {"type": "uri",
-                   "label": "センター取り説明",
-                   "uri": "https://youtu.be/JzjrUgptofg"},
+                 "title": "Alegría振り動画",
+                 "text": "それぞれ有効に使ってね",
+                 "actions": 
+                        [{"type": "uri",
+                          "label": "かんしゃらで踊るにあたって",
+                          "uri": "https://youtu.be/8sAWJGsyLHg"},
+                         {"type": "uri",
+                          "label": "曲通し",
+                          "uri": "https://youtu.be/HXVOWUdn3_M"},
+                         {"type": "uri",
+                          "label": "センター取り説明",
+                          "uri": "https://youtu.be/JzjrUgptofg"},
 //                  {"type": "uri",
 //                   "label": "パレード振り説明",
 //                   "uri": "https://youtu.be/hDwJfXeIICE"},
-                 ]
+                        ]
                   },
-                  {
-                  "title": "振り動画②",
-                  "text": "振り動画その二",
-                  "actions": [{"type": "uri",
-                  "label": "パレード振り説明",
-                  "uri": "https://youtu.be/hDwJfXeIICE"},
-                  {"type": "uri",
-                  "label": "冒頭(0：00～0:19)",
-                  "uri": "https://youtu.be/pUoVnCmtxvY"},
-                  {"type": "message",
-                  "label": "つけまつける～歌前(0：20～0:XX)",
-                  "text": "早く見たいなぁ"},
+                 {
+                  "title": "解説動画①",
+                  "text": "振りの細かい解説をしてるよ",
+                  "actions": 
+                         [{"type": "uri",
+                           "label": "冒頭",
+                           "uri": "https://youtu.be/pUoVnCmtxvY"},
+                          {"type": "uri",
+                           "label": "つけまつける～歌前",
+                           "uri": "https://youtu.be/qZYM3_FKTlc"},
+                          {"type": "uri",
+                           "label": "灰色の空に～泣いただろう",
+                           "uri": "https://youtu.be/_DTy7G5cWjg"},
                  ]
-    }]
+                 },
+                 {
+                  "title": "解説動画②",
+                  "text": "全部見てね",
+                  "actions": 
+                　　　　　[{"type": "message",
+                  　　　　　"label": "少しだけ～自由の翼広げ",
+                  　　　　　"text": "早く見たいなぁ"},
+                  　　　　{"type": "message",
+                  　　　　 "label": "Alegría～明日へと続く道",
+                          "text": "早く見たいなぁ"},
+                         {"type": "message",
+                          "label": "センターかち割り",
+                          "text": "早く見たいなぁ"},
+                 ]
+    　　　　　　　　},
+                 {
+                  "title": "解説動画③",
+                  "text": "忘れた頃に、また見てね",
+                  "actions": 
+                　　　　　[{"type": "message",
+                  　　　　　"label": "穿たれた～腕4回くるくる",
+                  　　　　　"text": "早く見たいなぁ"},
+                  　　　　{"type": "message",
+                  　　　　 "label": "新しい～よさこい節前",
+                          "text": "早く見たいなぁ"},
+                         {"type": "message",
+                          "label": "よさこい節",
+                          "text": "早く見たいなぁ"},
+                 ]
+    　　　　　　　　},
+                 {
+                  "title": "解説動画④&パレード振り",
+                  "text": "こねこねは頑張って覚えてね",
+                  "actions": 
+                　　　　　[{"type": "message",
+                  　　　　　"label": "こねこね",
+                  　　　　　"text": "早く見たいなぁ"},
+                  　　　　{"type": "message",
+                  　　　　 "label": "右腕ドリル～最後",
+                          "text": "早く見たいなぁ"},
+                         {"type": "uri",
+                          "label": "パレード振り説明",
+                          "uri": "https://youtu.be/hDwJfXeIICE"},
+                 ]
+    　　　　　　　　}
+               ]
   },
   "altText": "振り動画"
 }
-//      "actions": [{"type": "uri",
-//                   "label": "かんしゃらで踊るにあたって",
-//                   "uri": "https://youtu.be/8sAWJGsyLHg"},
-//                  {"type": "uri",
-//                   "label": "曲通し",
-//                   "uri": "https://youtu.be/HXVOWUdn3_M"},
-//                  {"type": "uri",
-//                   "label": "センター取り説明",
-//                   "uri": "https://youtu.be/JzjrUgptofg"},
-//                  {"type": "uri",
-//                   "label": "パレード振り説明",
-//                   "uri": "https://youtu.be/hDwJfXeIICE"},
-//                 ]
-//                  },
-//                  {
-//                  "title": "解説動画2",
-//                  "text": "③から④まで",
-//                  "actions": [{"type": "uri",
-//                  "label": "振り動画3(1:00 - 1:30)",
-//                  "uri": "https://www.youtube.com/watch?v=yVqfh0IrrRQ&feature=youtu.be"},
-//                  {"type": "uri",
-//                  "label": "振り動画4(1:30 - 2:00)",
-//                  "uri": "https://www.youtube.com/watch?v=s11F2xVm_94&feature=youtu.be"},
-//                 ]
-//    }
-//                  }]
-//  },
-//  "altText": "振り動画"
-//}
+
 
 // 購入申請をQuickReplyで実装
 quick_rep_purchase = [{
@@ -491,9 +511,17 @@ quick_rep_receive = [{
 // QuickReplyでメニューの実装
 quick_rep = [{
   "type": "text",
-  "text": "知りたい情報を下のメニューからスクロールして探してね。\n\n・申請状況確認\n・購入申請の取消\n・支払い確認の取消\n・備品などの料金確認\n・祭りの持ち物確認\n・振込先の確認\n・イベントについて確認\n・振り動画",
+  "text": "知りたい情報を下のメニューからスクロールして探してね。\n\n・衣装の着方について\n・申請状況確認\n・購入申請の取消\n・支払い確認の取消\n・備品などの料金確認\n・祭りの持ち物確認\n・振込先の確認\n・イベントについて確認\n・振り動画",
   "quickReply": {
     "items": [
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "衣装の着方を知りたい！",
+          "text" : "衣装の着方"
+        }
+      },
       {
         "type": "action",
         "action": {
