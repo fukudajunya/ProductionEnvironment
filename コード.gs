@@ -72,6 +72,9 @@ function doPost(e) {
         break;
       case "教えて担当さん":
         var data = returnMessage(token, "能登の担当は以下の2人です！相談はお二人へ！\n■祭り担当:ふぁに\nhttps://line.me/ti/p/KKB-4EfFfs\n■インスト担当:まりな\nhttps://line.me/ti/p/VQJftJ59rh");
+        break;
+      case "衣装の着方を教えて！":
+        var data = returnMessage(token, "https://youtu.be/WV-yEM0DHhY");
         break;  
       case "振り動画" :
 //        var data = returnMessage(token, "振り動画は制作中です！しばらく待ってね。");
@@ -104,7 +107,14 @@ function doPost(e) {
         break;
       // さくよさ⇒能登に変更 by NF 5/9
       case "衣装の着方":
-        var data = returnMessage(token, "準備中です！ちょっと待ってね！");
+//いすみがいじりました
+//        var data = returnMessage(token, "準備中です！ちょっと待ってね！");
+//        break;
+        var data =  {
+        "replyToken" : token, 
+        "messages" : [quick_rep]
+        };
+//ここまで   
         break;
       case "能登よさこい参加費(a)" :
         var item = "能登よさこい参加費";

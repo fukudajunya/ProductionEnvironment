@@ -118,12 +118,12 @@ ret_msg_mv = {
                   "title": "解説動画②",
                   "text": "全部見てね",
                   "actions": 
-                　　　　　[{"type": "message",
+                　　　　　[{"type": "uri",
                   　　　　　"label": "少しだけ～自由の翼広げ",
-                  　　　　　"text": "早く見たいなぁ"},
-                  　　　　{"type": "message",
+                  　　　　　"uri": "https://youtu.be/u17V2K1_E5g"},
+                  　　　　{"type": "uri",
                   　　　　 "label": "Alegría～明日へと続く道",
-                          "text": "早く見たいなぁ"},
+                          "uri": "https://youtu.be/Le159RmkbGI"},
                          {"type": "message",
                           "label": "センターかち割り",
                           "text": "早く見たいなぁ"},
@@ -519,7 +519,7 @@ quick_rep = [{
         "action": {
           "type": "message",
           "label": "衣装の着方を知りたい！",
-          "text" : "衣装の着方"
+          "text": "衣装の着方を教えて！"
         }
       },
       {
