@@ -1,6 +1,6 @@
 // 購入申請キャンセル
 function cancelPurchaseApplication(userId,userName,item,setToken){
-  var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheet/ccc?key=17aYVVfYk7bbQXBSlRLPqoHH-z_7uPzn6-CnppsVkbms");
+  var sheet = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheet/ccc?key=1LD89XWQ3mTVVbLp2-TzIfzyfVtepwF9e36y7zxug6iQ");
   var ss = sheet.getSheets()[0];
   ss.sort(3,false);
   var lastRow = ss.getLastRow();

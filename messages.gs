@@ -168,16 +168,39 @@ ret_msg_mv = {
 // 購入申請をQuickReplyで実装
 quick_rep_purchase = [{
   "type": "text",
-  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・能登よさこい参加費:￥24,000\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
+  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・吹田まつり参加費:￥1,500\n・高知よさこい参加費（基本プラン）:￥53,000\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
   "quickReply": {
     "items": [
-// 能登よさ時に復活予定 by NF 4/10 -> 復活 by NF 5/9
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "吹田まつり参加費",
+          "text" : "吹田まつり参加費(a)"
+        }
+      },
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "高知よさこい参加費",
+          "text" : "高知よさこい参加費(a)"
+        }
+      },
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ",
+          "text" : "Tシャツ(a)"
+        }
+      },
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "能登よさこい参加費",
-          "text" : "能登よさこい参加費(a)"
+          "label": "Tシャツ2枚",
+          "text" : "Tシャツ2枚(a)"
         }
       },
       {
@@ -238,13 +261,36 @@ quick_rep_purchase_cancel = [{
   "text": "どの物品の購入申請をキャンセルしますか？下のメニューから選択してください。",
   "quickReply": {
     "items": [
-// 能登よさ時に復活 by NF 4/10　-> 復活 5/9
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "能登よさこい参加費",
-          "text" : "能登よさこい参加費(ad)"
+          "label": "吹田まつり参加費",
+          "text" : "吹田まつり参加費(ad)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "高知よさこい参加費",
+          "text" : "高知よさこい参加費(ad)"
+        }
+      },
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ",
+          "text" : "Tシャツ(ad)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ2枚",
+          "text" : "Tシャツ2枚(ad)"
         }
       },
       {
@@ -305,13 +351,36 @@ quick_rep_payment = [{
   "text": "購入申請後、振込を行う場合は以下の口座に振り込んでね!\n■口座情報\n金融機関:三菱東京UFJ銀行\n支店名:八尾支店\n口座種別:普通\n口座番号:0199344\n口座名義:カンシャラ コウヅミナト\n\n振込が完了している場合は、以下のメニューから支払いが完了したものを選択してください。\n各備品の値段が知りたい場合は、以下のメニューから「料金」を選択してください。",
   "quickReply": {
     "items": [
-// 能登よさ時に復活 by NF 4/10 -> 復活 5/9
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "能登よさこい参加費",
-          "text" : "能登よさこい参加費(p)"
+          "label": "吹田まつり参加費",
+          "text" : "吹田まつり参加費(p)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "高知よさこい参加費",
+          "text" : "高知よさこい参加費(p)"
+        }
+      },
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ",
+          "text" : "Tシャツ(p)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ2枚",
+          "text" : "Tシャツ2枚(p)"
         }
       },
       {
@@ -380,13 +449,36 @@ quick_rep_cancel_payment = [{
   "text": "支払い確認を取り消す場合は、取り消す備品を選択してください。",
   "quickReply": {
     "items": [
-// 能登よさ時に復活 by NF 4/10 -> 復活 5/9
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "能登よさこい参加費",
-          "text" : "能登よさこい参加費(pd)"
+          "label": "吹田まつり参加費",
+          "text" : "吹田まつり参加費(pd)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "高知よさこい参加費",
+          "text" : "高知よさこい参加費(pd)"
+        }
+      },
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ",
+          "text" : "Tシャツ(pd)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ2枚",
+          "text" : "Tシャツ2枚(pd)"
         }
       },
       {
@@ -447,13 +539,36 @@ quick_rep_receive = [{
   "text": "物品を受け取ったら、以下のメニューから受け取った備品を選択して受け取り確認を行ってください。",
   "quickReply": {
     "items": [
-// 能登よさ時に復活 by NF 4/10 -> 復活 5/9
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "能登よさこい参加費",
-          "text" : "能登よさこい参加費(r)"
+          "label": "吹田まつり参加費",
+          "text" : "吹田まつり参加費(r)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "高知よさこい参加費",
+          "text" : "高知よさこい参加費(r)"
+        }
+      },
+     {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ",
+          "text" : "Tシャツ(r)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Tシャツ2枚",
+          "text" : "Tシャツ2枚(r)"
         }
       },
       {
