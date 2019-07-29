@@ -76,8 +76,6 @@ function doPost(e) {
         break;  
       case "振り動画" :
         // var data = returnMessage(token, "振り動画は制作中です！しばらく待ってね。");
-        // 振り動画作成完了後復活
-        
         var data =  {
         "replyToken" : token, 
         "messages" : [ret_msg_mv]
@@ -108,7 +106,6 @@ function doPost(e) {
         "messages" : [quick_rep]
         };
         break;
-      // オマケ added by クロロ 7/12
       case "ジョジョ":
         var data = returnMessage(token, "無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄無駄");
         break;

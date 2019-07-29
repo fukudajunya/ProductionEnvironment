@@ -76,7 +76,6 @@ ret_msg_inst = {
   "altText": "イベントに関する連絡"
 }
 
-// ToDo 動画が編集されたらURL差し替えで対応
 ret_msg_mv = {
   "type": "template",
   "template": {
@@ -94,9 +93,6 @@ ret_msg_mv = {
                          {"type": "uri",
                           "label": "センター取り説明",
                           "uri": "https://youtu.be/JzjrUgptofg"},
-//                  {"type": "uri",
-//                   "label": "パレード振り説明",
-//                   "uri": "https://youtu.be/hDwJfXeIICE"},
                         ]
                   },
                  {
