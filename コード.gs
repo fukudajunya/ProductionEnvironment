@@ -41,7 +41,7 @@ function doPost(e) {
         };
         break;
       case "料金" : 
-        var data = returnMessage(token, "・吹田まつり参加費:￥2,000\n・高知よさこい参加費（基本プラン）:￥53,000\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
+        var data = returnMessage(token, "・神戸よさこい参加費:￥2,500\n・スパよさ参加費:￥3,500\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
         break;
       case "申請状況確認" :
         var data = checkApplicationStatus(userId,token);
@@ -112,14 +112,14 @@ function doPost(e) {
       case "最高に":
         var data = returnMessage(token, "「ハイ！」ってやつだアアアアアアハハハハハハハハハハーッ");
         break;
-      case "吹田まつり参加費(a)" :
-        var item = "吹田まつり参加費";
-        var price = 2000;
+      case "神戸よさこい参加費(a)" :
+        var item = "神戸よさこい参加費";
+        var price = 2500;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break;  
-      case "高知よさこい参加費(a)" :
-        var item = "高知よさこい参加費（基本プラン）";
-        var price = 53000;
+      case "スパよさ参加費(a)" :
+        var item = "スパよさ参加費";
+        var price = 3500;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break;  
       case "Tシャツ(a)" :
@@ -168,12 +168,12 @@ function doPost(e) {
           "messages" : quick_rep_payment
         };
         break;
-　　　 case "吹田まつり参加費(p)" :
-        var item = "吹田まつり参加費";
+　　　 case "神戸よさこい参加費(p)" :
+        var item = "神戸よさこい参加費";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;  
-      case "高知よさこい参加費(p)" :
-        var item = "高知よさこい参加費（基本プラン）";
+      case "スパよさ参加費(p)" :
+        var item = "スパよさ参加費";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;  
       case "Tシャツ(p)" :
@@ -208,12 +208,12 @@ function doPost(e) {
         var item = "衣装/LL";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;
-      case "吹田まつり参加費(r)" :
-        var item = "吹田まつり参加費";
+      case "神戸よさこい参加費(r)" :
+        var item = "神戸よさこい参加費";
         var data = receivedStatusInfo(userId,userName,item,token);
         break;  
-      case "高知よさこい参加費(r)" :
-        var item = "高知よさこい参加費（基本プラン）";
+      case "スパよさ参加費(r)" :
+        var item = "スパよさ参加費";
         var data = receivedStatusInfo(userId,userName,item,token);
         break;
       case "Tシャツ(r)" :
@@ -254,12 +254,12 @@ function doPost(e) {
           "messages" : quick_rep_purchase_cancel
         };
         break;
-      case "吹田まつり参加費(ad)" :
-        var item = "吹田まつり参加費";
+      case "神戸よさこい参加費(ad)" :
+        var item = "神戸よさこい参加費";
         var data = cancelPurchaseApplication(userId,userName,item,token);
         break;
-      case "高知よさこい参加費(ad)" :
-        var item = "高知よさこい参加費（基本プラン）";
+      case "スパよさ参加費(ad)" :
+        var item = "スパよさ参加費";
         var data = cancelPurchaseApplication(userId,userName,item,token);
         break;
       case "Tシャツ(ad)" :
@@ -300,12 +300,12 @@ function doPost(e) {
           "messages" : quick_rep_cancel_payment
         };
         break;
-      case "吹田まつり参加費(pd)" :
-        var item = "吹田まつり参加費";
+      case "神戸よさこい参加費(pd)" :
+        var item = "神戸よさこい参加費";
         var data = cancelPaymentStatus(userId,userName,item,token);
         break;    
-      case "高知よさこい参加費(pd)" :
-        var item = "高知よさこい参加費（基本プラン）";
+      case "スパよさ参加費(pd)" :
+        var item = "スパよさ参加費";
         var data = cancelPaymentStatus(userId,userName,item,token);
         break;  
       case "Tシャツ(pd)" :

@@ -164,23 +164,23 @@ ret_msg_mv = {
 // 購入申請をQuickReplyで実装
 quick_rep_purchase = [{
   "type": "text",
-  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・吹田まつり参加費:￥1,500\n・高知よさこい参加費（基本プラン）:￥53,000\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
+  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・神戸よさこい参加費:￥2,500\n・スパよさ参加費:￥3,500\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
   "quickReply": {
     "items": [
      {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "吹田まつり参加費",
-          "text" : "吹田まつり参加費(a)"
+          "label": "神戸よさこい参加費",
+          "text" : "神戸よさこい参加費(a)"
         }
       },
      {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "高知よさこい参加費",
-          "text" : "高知よさこい参加費(a)"
+          "label": "スパよさ参加費",
+          "text" : "スパよさ参加費(a)"
         }
       },
      {
@@ -261,16 +261,16 @@ quick_rep_purchase_cancel = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "吹田まつり参加費",
-          "text" : "吹田まつり参加費(ad)"
+          "label": "神戸よさこい参加費",
+          "text" : "神戸よさこい参加費(ad)"
         }
       },
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "高知よさこい参加費",
-          "text" : "高知よさこい参加費(ad)"
+          "label": "スパよさ参加費",
+          "text" : "スパよさ参加費(ad)"
         }
       },
      {
@@ -351,16 +351,16 @@ quick_rep_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "吹田まつり参加費",
-          "text" : "吹田まつり参加費(p)"
+          "label": "神戸よさこい参加費",
+          "text" : "神戸よさこい参加費(p)"
         }
       },
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "高知よさこい参加費",
-          "text" : "高知よさこい参加費(p)"
+          "label": "スパよさ参加費",
+          "text" : "スパよさ参加費(p)"
         }
       },
      {
@@ -449,16 +449,16 @@ quick_rep_cancel_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "吹田まつり参加費",
-          "text" : "吹田まつり参加費(pd)"
+          "label": "神戸よさこい参加費",
+          "text" : "神戸よさこい参加費(pd)"
         }
       },
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "高知よさこい参加費",
-          "text" : "高知よさこい参加費(pd)"
+          "label": "スパよさ参加費",
+          "text" : "スパよさ参加費(pd)"
         }
       },
      {
@@ -539,16 +539,16 @@ quick_rep_receive = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "吹田まつり参加費",
-          "text" : "吹田まつり参加費(r)"
+          "label": "神戸よさこい参加費",
+          "text" : "神戸よさこい参加費(r)"
         }
       },
       {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "高知よさこい参加費",
-          "text" : "高知よさこい参加費(r)"
+          "label": "スパよさ参加費",
+          "text" : "スパよさ参加費(r)"
         }
       },
      {
