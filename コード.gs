@@ -63,13 +63,13 @@ function doPost(e) {
         break;
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
-        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\n★東京よさこいについて、下記の二人にも連絡してね。\n\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりについて、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/VQJftJ59rh");
+        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\n★東京よさこいについて、下記の二人にも連絡してね。\n\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりについて、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
         break;  
       case "サークルスクエア":
         var data = returnMessage(token, "イベント参加はサークルスクエアより参加表明をお願いします。\n\nhttps://www.c-sqr.net/cs75424/News.html");
         break;
       case "教えて担当さん":
-        var data = returnMessage(token, "★東京よさこいの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/VQJftJ59rh");
+        var data = returnMessage(token, "★東京よさこいの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
         break;
       case "衣装の着方を教えて！":
         var data = returnMessage(token, "https://youtu.be/WV-yEM0DHhY");
@@ -305,7 +305,7 @@ function doPost(e) {
         var data = cancelPaymentStatus(userId,userName,item,token);
         break; 
       case "ゑまつり参加費(pd)" :
-        var item = "東京よさこい参加費";
+        var item = "ゑまつり参加費";
         var data = cancelPaymentStatus(userId,userName,item,token);
         break;    
       case "Tシャツ(pd)" :
