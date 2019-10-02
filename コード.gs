@@ -63,13 +63,13 @@ function doPost(e) {
         break;
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
-        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\n★光が丘について、下記の二人にも連絡してね。\n\n■祭り担当:ふくじゅん\nhttps://line.me/ti/p/E73LpgkLse\n■インスト担当:えん\nhttps://line.me/ti/p/9bpnRGUzWv\n\n★吹田について、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:まりな\nhttps://line.me/ti/p/VQJftJ59rh\n\n★高知について、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:まりな\nhttps://line.me/ti/p/VQJftJ59rh");
+        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\n★東京よさこいについて、下記の二人にも連絡してね。\n\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりについて、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/VQJftJ59rh");
         break;  
       case "サークルスクエア":
         var data = returnMessage(token, "イベント参加はサークルスクエアより参加表明をお願いします。\n\nhttps://www.c-sqr.net/cs75424/News.html");
         break;
       case "教えて担当さん":
-        var data = returnMessage(token, "★東京よさこいの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n");
+        var data = returnMessage(token, "★東京よさこいの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/VQJftJ59rh");
         break;
       case "衣装の着方を教えて！":
         var data = returnMessage(token, "https://youtu.be/WV-yEM0DHhY");
@@ -116,7 +116,12 @@ function doPost(e) {
         var item = "東京よさこい参加費";
         var price = 2500;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
-        break;    
+        break; 
+      case "ゑまつり参加費(a)" :
+          var item = "ゑまつり参加費";
+          var price = 3000;
+          var data = purchaseApplicationInfo(userId,userName,item,price,token);
+          break;    
       case "Tシャツ(a)" :
         var item = "Tシャツ";
         var price = 2000;
@@ -166,7 +171,11 @@ function doPost(e) {
 　　　 case "東京よさこい参加費(p)" :
         var item = "東京よさこい参加費";
         var data = paymentStatusInfo(userId,userName,item,token);
-        break;  
+        break;
+      case "ゑまつり参加費(p)" :
+          var item = "ゑまつり参加費";
+          var data = paymentStatusInfo(userId,userName,item,token);
+          break;  
       case "Tシャツ(p)" :
         var item = "Tシャツ";
         var data = paymentStatusInfo(userId,userName,item,token);
@@ -203,6 +212,10 @@ function doPost(e) {
         var item = "東京よさこい参加費";
         var data = receivedStatusInfo(userId,userName,item,token);
         break;  
+    　case "ゑまつり参加費(r)" :
+          var item = "ゑまつり参加費";
+          var data = receivedStatusInfo(userId,userName,item,token);
+          break;    
       case "Tシャツ(r)" :
         var item = "Tシャツ";
         var data = receivedStatusInfo(userId,userName,item,price,token);
@@ -245,6 +258,10 @@ function doPost(e) {
         var item = "東京よさこい参加費";
         var data = cancelPurchaseApplication(userId,userName,item,token);
         break;
+      case "ゑまつり参加費(ad)" :
+          var item = "ゑまつり参加費";
+          var data = cancelPurchaseApplication(userId,userName,item,token);
+          break;
       case "Tシャツ(ad)" :
         var item = "Tシャツ";
         var data = cancelPurchaseApplication(userId,userName,item,token);
@@ -284,6 +301,10 @@ function doPost(e) {
         };
         break;
       case "東京よさこい参加費(pd)" :
+        var item = "東京よさこい参加費";
+        var data = cancelPaymentStatus(userId,userName,item,token);
+        break; 
+      case "ゑまつり参加費(pd)" :
         var item = "東京よさこい参加費";
         var data = cancelPaymentStatus(userId,userName,item,token);
         break;    
