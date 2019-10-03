@@ -116,7 +116,12 @@ function doPost(e) {
         var item = "東京よさこい参加費";
         var price = 2500;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
-        break;    
+        break;
+      case "えまつり参加費(a)" :
+        var item = "えまつり参加費";
+        var price = 3000;
+        var data = purchaseApplicationInfo(userId,userName,item,price,token);
+        break;       
       case "Tシャツ(a)" :
         var item = "Tシャツ";
         var price = 2000;
