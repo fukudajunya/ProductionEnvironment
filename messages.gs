@@ -164,15 +164,15 @@ ret_msg_mv = {
 // 購入申請をQuickReplyで実装
 quick_rep_purchase = [{
   "type": "text",
-  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・東京よさこい参加費:￥2,500\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
+  "text": "どれを購入しますか？下のメニューから選択してください。\n\n・ゑ祭り参加費:￥3,000\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000",
   "quickReply": {
     "items": [
      {
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(a)"
+          "label": "ゑ祭り参加費",
+          "text" : "ゑ祭り参加費(a)"
         }
       },
      {
@@ -253,8 +253,8 @@ quick_rep_purchase_cancel = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(ad)"
+          "label": "ゑ祭り参加費",
+          "text" : "ゑ祭り参加費(ad)"
         }
       },
      {
@@ -335,8 +335,8 @@ quick_rep_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(p)"
+          "label": "ゑ祭り参加費",
+          "text" : "ゑ祭り参加費(p)"
         }
       },
      {
@@ -425,8 +425,8 @@ quick_rep_cancel_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(pd)"
+          "label": "ゑ祭り参加費",
+          "text" : "ゑ祭り参加費(pd)"
         }
       },
      {
@@ -507,8 +507,8 @@ quick_rep_receive = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(r)"
+          "label": "ゑ祭り参加費",
+          "text" : "ゑ祭り参加費(r)"
         }
       },
      {
