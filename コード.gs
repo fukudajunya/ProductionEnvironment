@@ -41,7 +41,7 @@ function doPost(e) {
         };
         break;
       case "料金" : 
-        var data = returnMessage(token, "・東京よさこい参加費:￥2,500\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
+        var data = returnMessage(token, "・四日市よさこい参加費:￥3,000\n・理大祭参加費:￥1,000\n・Tシャツ:￥2,000（Tシャツ2枚セット：￥3,800）\n・鳴子/片方:￥1,300\n・鳴子/1組:￥2,500\n・衣装:￥22,000");
         break;
       case "申請状況確認" :
         var data = checkApplicationStatus(userId,token);
@@ -63,13 +63,13 @@ function doPost(e) {
         break;
       case "キャンセル連絡" :
         // var data = returnMessage(token, "現在参加できるイベントはありません。")
-        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\n★東京よさこいについて、下記の二人にも連絡してね。\n\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりについて、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
+        var data =returnMessage(token, "サークルスクエアで不参加への更新をお願いします。\nhttps://www.c-sqr.net/cs75424/News.html\n\n★理大祭について、下記の二人にも連絡してね。\n\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★四日市よさこいについて、下記の二人にも連絡してね。\n\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
         break;  
       case "サークルスクエア":
         var data = returnMessage(token, "イベント参加はサークルスクエアより参加表明をお願いします。\n\nhttps://www.c-sqr.net/cs75424/News.html");
         break;
       case "教えて担当さん":
-        var data = returnMessage(token, "★東京よさこいの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★ゑまつりの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
+        var data = returnMessage(token, "★理大祭の担当は以下の2人です！相談はお二人へ！\n■祭り担当:みんここ\nhttps://line.me/ti/p/sKFmFZCJwq\n\n■インスト担当:ダンボ\nhttps://line.me/ti/p/XIJP5HVLQ-\n\n★四日市よさこいの担当は以下の2人です！相談はお二人へ！\n■祭り担当:みなと\nhttps://line.me/ti/p/QFNJY_V7VK\n■インスト担当:たらこ\nhttps://line.me/ti/p/umUggC9ucM");
         break;
       case "衣装の着方を教えて！":
         var data = returnMessage(token, "https://youtu.be/WV-yEM0DHhY");
@@ -112,14 +112,14 @@ function doPost(e) {
       case "最高に":
         var data = returnMessage(token, "「ハイ！」ってやつだアアアアアアハハハハハハハハハハーッ");
         break;
-      case "東京よさこい参加費(a)" :
-        var item = "東京よさこい参加費";
-        var price = 2500;
+      case "四日市よさこい参加費(a)" :
+        var item = "四日市よさこい参加費";
+        var price = 3000;
         var data = purchaseApplicationInfo(userId,userName,item,price,token);
         break; 
-      case "ゑまつり参加費(a)" :
-          var item = "ゑまつり参加費";
-          var price = 3000;
+      case "理大祭参加費(a)" :
+          var item = "理大祭参加費";
+          var price = 1000;
           var data = purchaseApplicationInfo(userId,userName,item,price,token);
           break;    
       case "Tシャツ(a)" :
@@ -168,12 +168,12 @@ function doPost(e) {
           "messages" : quick_rep_payment
         };
         break;
-　　　 case "東京よさこい参加費(p)" :
-        var item = "東京よさこい参加費";
+　　　 case "四日市よさこい参加費(p)" :
+        var item = "四日市よさこい参加費";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;
-      case "ゑまつり参加費(p)" :
-          var item = "ゑまつり参加費";
+      case "理大祭参加費(p)" :
+          var item = "理大祭参加費";
           var data = paymentStatusInfo(userId,userName,item,token);
           break;  
       case "Tシャツ(p)" :
@@ -208,12 +208,12 @@ function doPost(e) {
         var item = "衣装/LL";
         var data = paymentStatusInfo(userId,userName,item,token);
         break;
-      case "東京よさこい参加費(r)" :
-        var item = "東京よさこい参加費";
+      case "四日市よさこい参加費(r)" :
+        var item = "四日市よさこい参加費";
         var data = receivedStatusInfo(userId,userName,item,token);
         break;  
-    　case "ゑまつり参加費(r)" :
-          var item = "ゑまつり参加費";
+    　case "理大祭参加費(r)" :
+          var item = "理大祭参加費";
           var data = receivedStatusInfo(userId,userName,item,token);
           break;    
       case "Tシャツ(r)" :
@@ -254,12 +254,12 @@ function doPost(e) {
           "messages" : quick_rep_purchase_cancel
         };
         break;
-      case "東京よさこい参加費(ad)" :
-        var item = "東京よさこい参加費";
+      case "四日市よさこい参加費(ad)" :
+        var item = "四日市よさこい参加費";
         var data = cancelPurchaseApplication(userId,userName,item,token);
         break;
-      case "ゑまつり参加費(ad)" :
-          var item = "ゑまつり参加費";
+      case "理大祭参加費(ad)" :
+          var item = "理大祭参加費";
           var data = cancelPurchaseApplication(userId,userName,item,token);
           break;
       case "Tシャツ(ad)" :
@@ -300,12 +300,12 @@ function doPost(e) {
           "messages" : quick_rep_cancel_payment
         };
         break;
-      case "東京よさこい参加費(pd)" :
-        var item = "東京よさこい参加費";
+      case "四日市よさこい参加費(pd)" :
+        var item = "四日市よさこい参加費";
         var data = cancelPaymentStatus(userId,userName,item,token);
         break; 
-      case "ゑまつり参加費(pd)" :
-        var item = "ゑまつり参加費";
+      case "理大祭参加費(pd)" :
+        var item = "理大祭参加費";
         var data = cancelPaymentStatus(userId,userName,item,token);
         break;    
       case "Tシャツ(pd)" :

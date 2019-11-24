@@ -171,8 +171,16 @@ quick_rep_purchase = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(a)"
+          "label": "四日市よさこい参加費",
+          "text" : "四日市よさこい参加費(a)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "理大祭参加費",
+          "text" : "理大祭参加費(a)"
         }
       },
      {
@@ -253,8 +261,16 @@ quick_rep_purchase_cancel = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(ad)"
+          "label": "四日市よさこい参加費",
+          "text" : "四日市よさこい参加費(ad)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "理大祭参加費",
+          "text" : "理大祭参加費(ad)"
         }
       },
      {
@@ -335,8 +351,16 @@ quick_rep_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(p)"
+          "label": "四日市よさこい参加費",
+          "text" : "四日市よさこい参加費(p)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "理大祭参加費",
+          "text" : "理大祭参加費(p)"
         }
       },
      {
@@ -425,8 +449,16 @@ quick_rep_cancel_payment = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(pd)"
+          "label": "四日市よさこい参加費",
+          "text" : "四日市よさこい参加費(pd)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "理大祭参加費",
+          "text" : "理大祭参加費(pd)"
         }
       },
      {
@@ -507,8 +539,16 @@ quick_rep_receive = [{
         "type": "action",
         "action": {
           "type": "message",
-          "label": "東京よさこい参加費",
-          "text" : "東京よさこい参加費(r)"
+          "label": "四日市よさこい参加費",
+          "text" : "四日市よさこい参加費(r)"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "理大祭参加費",
+          "text" : "理大祭参加費(r)"
         }
       },
      {
